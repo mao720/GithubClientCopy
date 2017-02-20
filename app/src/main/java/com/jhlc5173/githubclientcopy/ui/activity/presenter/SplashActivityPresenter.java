@@ -47,7 +47,7 @@ public class SplashActivityPresenter {
                 super.onError(e);
             }
         });*/
-        userManager.testLogin().subscribe(new Subscriber<UserResponse>() {
+        /*userManager.testLogin().subscribe(new Subscriber<UserResponse>() {
             @Override
             public void onCompleted() {
 
@@ -62,8 +62,8 @@ public class SplashActivityPresenter {
             public void onNext(UserResponse userResponse) {
                 view.toast(null);
             }
-        });
-        /*if (validator.validUsername(username)) {
+        });*/
+        if (validator.validUsername(username)) {
             //view.showLoading(true);
             userManager.getUser(username)
 //                    .subscribeOn(Schedulers.io())
@@ -101,7 +101,7 @@ public class SplashActivityPresenter {
             });
         } else {
             view.showValidationError();
-        }*/
+        }
     }
 
    /* public void toast() {

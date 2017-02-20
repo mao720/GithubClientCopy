@@ -8,10 +8,8 @@ import com.jhlc5173.githubclientcopy.ui.activity.ActivityScope;
 import com.jhlc5173.githubclientcopy.ui.activity.RepositoriesListActivity;
 import com.jhlc5173.githubclientcopy.ui.activity.presenter.RepositoriesListActivityPresenter;
 import com.jhlc5173.githubclientcopy.ui.adapter.RepositoriesListAdapter;
-import com.jhlc5173.githubclientcopy.ui.adapter.viewholder.RepositoriesViewHolderBig;
 import com.jhlc5173.githubclientcopy.ui.adapter.viewholder.RepositoriesViewHolderBigFactory;
 import com.jhlc5173.githubclientcopy.ui.adapter.viewholder.RepositoriesViewHolderFactory;
-import com.jhlc5173.githubclientcopy.ui.adapter.viewholder.RepositoriesViewHolderNormal;
 import com.jhlc5173.githubclientcopy.ui.adapter.viewholder.RepositoriesViewHolderNormalFactory;
 
 import java.util.Map;

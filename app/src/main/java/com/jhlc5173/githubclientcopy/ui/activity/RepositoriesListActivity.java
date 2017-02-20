@@ -1,5 +1,6 @@
 package com.jhlc5173.githubclientcopy.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -26,6 +27,7 @@ import butterknife.ButterKnife;
  * Created by MaoJunFeng on 2017/2/11.
  */
 public class RepositoriesListActivity extends BaseActivity implements RepositoriesListContract.View {
+    public static final String ARG_REPOSITORY = "arg_repository";
     @BindView(R.id.rvRepositories)
     RecyclerView rvRepositories;
     @BindView(R.id.pbLoading)
@@ -66,5 +68,11 @@ public class RepositoriesListActivity extends BaseActivity implements Repositori
 
     public void setRepositories(ImmutableList<Repository> repositories) {
         repositoriesListAdapter.updateRepositoriesList(repositories);
+    }
+
+    public void onRepositoryClick(Repository repository) {
+        Intent intent = new Intent(this, RepositoryDetailsActivity.class);
+        intent.putExtra(ARG_REPOSITORY,repository);
+        startActivity(intent);
     }
 }

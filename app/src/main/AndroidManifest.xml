@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.RepositoriesListActivity"/>
+        <activity android:name=".ui.activity.RepositoryDetailsActivity" />
     </application>
 
 </manifest>

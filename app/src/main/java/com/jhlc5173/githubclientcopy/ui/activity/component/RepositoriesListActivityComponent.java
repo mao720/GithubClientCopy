@@ -14,5 +14,5 @@ import dagger.Subcomponent;
 @ActivityScope
 @Subcomponent(modules = RepositoriesListActivityModule.class)
 public interface RepositoriesListActivityComponent {
-    RepositoriesListActivity inject(RepositoriesListActivity repositoriesListActivity);
+    void inject(RepositoriesListActivity repositoriesListActivity);
 }

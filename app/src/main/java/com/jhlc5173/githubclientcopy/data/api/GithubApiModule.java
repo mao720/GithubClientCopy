@@ -40,8 +40,8 @@ public class GithubApiModule {
     Retrofit providesRestAdapter(OkHttpClient okHttpClient) {
         Retrofit.Builder builder = new Retrofit.Builder();
         builder.client(okHttpClient)
-                //.baseUrl("https://api.github.com")
-                .baseUrl("http://172.16.76.111:80")
+                .baseUrl("https://api.github.com")
+                //.baseUrl("http://172.16.76.111:80")
                 //.baseUrl("http://mn.5173.cn/api/")
                 //.baseUrl("http://120.27.237.114:8081/b2b2c/rest/api/v1/")
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())

@@ -20,15 +20,16 @@ public class UserModule {
         this.user = user;
     }
 
-    /*@Provides
+    @Provides
     @UserScope
     User provideUser() {
         return user;
-    }*/
+    }
+
     @Provides
     @UserScope
     RepositoriesManager provideRepositoriesManager(GithubApiService githubApiService) {
-        return new RepositoriesManager(user ,githubApiService);
+        return new RepositoriesManager(user, githubApiService);
     }
 }
 
